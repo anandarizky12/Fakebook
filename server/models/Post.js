@@ -20,8 +20,11 @@ const post = mongoose.Schema({
         type: Date, 
         default: new Date(),
       
+    },
+    likeCount: {
+        type: Number,
+        default: 0,
     }
-
 })
 
 var PostMessage =mongoose.model('post', post);
